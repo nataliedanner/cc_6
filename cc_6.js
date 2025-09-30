@@ -33,3 +33,20 @@ let employees = [
 
 let manager = new Manager("Taylor", "HR", 8);
 
+// Create class Company
+
+class Company{
+    employees = []
+    constructor(employees){
+        this.employees = employees
+    }
+    addEmployee() {
+        new Employee("Chad", "Accounting")
+    }
+
+    listEmployees() {
+        return `${this.name} works in the ${this.department} department.`
+    }
+}
+
+
