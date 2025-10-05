@@ -25,28 +25,31 @@ class Manager extends Employee{
 
 // Create sample employees and manager
 
-let employees = [
-    new Employee("Alice", "Finance"),
-    new Employee("Jim", "Advertising"),
-    new Employee("Amanda", "Sales")
-];
+
+let emp1 = new Employee("Alice", "Finance");
+let emp2 = new Employee("Jim", "Advertising");
 
 let manager = new Manager("Taylor", "HR", 8);
 
 // Create class Company
 
-class Company{
-    employees = []
-    constructor(employees){
-        this.employees = employees
+class Company {
+    constructor(){ 
+        this.employees = []
     }
-    addEmployee() {
-        new Employee("Chad", "Accounting")
+    addEmployee(employee) {
+        this.employees.push()
     }
 
     listEmployees() {
-        return `${this.name} works in the ${this.department} department.`
+        return console.log(`${this.name} works in the ${this.department} department.`)
     }
 }
 
+// Create Company object
 
+let c = new Company();
+let emp4 = new Employee("Jane", "Marketing");
+c.addEmployee(emp4);
+console.log("Employee List")
+c.listEmployees();
