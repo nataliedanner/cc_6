@@ -28,6 +28,7 @@ class Manager extends Employee{
 
 let emp1 = new Employee("Alice", "Finance");
 let emp2 = new Employee("Jim", "Advertising");
+let emp3 = new Employee("Brian", "Sales")
 
 let manager = new Manager("Taylor", "HR", 8);
 
